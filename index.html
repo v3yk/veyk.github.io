@@ -6,105 +6,202 @@
   <title>Web Application Security Analyst</title>
 
   <style>
+    :root {
+      --bg: #0b0f14;
+      --panel: #0f1623;
+      --text: #d1d7e0;
+      --muted: #8b949e;
+      --accent: #58a6ff;
+      --border: #1f2937;
+    }
+
     body {
-      background-color: #0d1117;
-      color: #c9d1d9;
+      margin: 0;
+      background: linear-gradient(180deg, #0b0f14 0%, #020617 100%);
+      color: var(--text);
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      max-width: 800px;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 880px;
       margin: auto;
-      padding: 50px 20px;
-      line-height: 1.6;
+      padding: 70px 20px;
     }
 
-    h1 {
-      color: #58a6ff;
-      margin-bottom: 5px;
+    /* HERO */
+    .hero {
+      margin-bottom: 80px;
     }
 
-    h2 {
-      color: #58a6ff;
-      margin-top: 40px;
-      font-size: 1.2rem;
+    .hero h1 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+      color: white;
     }
 
-    p {
-      margin: 10px 0;
+    .hero p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 650px;
+    }
+
+    /* SECTION */
+    section {
+      margin-bottom: 70px;
+      padding-left: 18px;
+      border-left: 3px solid var(--accent);
+    }
+
+    section h2 {
+      color: var(--accent);
+      font-size: 1.25rem;
+      margin-bottom: 15px;
     }
 
     ul {
-      padding-left: 20px;
+      padding-left: 18px;
     }
 
     li {
       margin: 6px 0;
     }
 
+    /* HIGHLIGHT STRIP */
+    .highlight {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 25px;
+      margin-top: 25px;
+    }
+
     a {
-      color: #58a6ff;
+      color: var(--accent);
       text-decoration: none;
+      font-weight: 500;
     }
 
     a:hover {
       text-decoration: underline;
     }
 
-    .box {
-      border: 1px solid #30363d;
-      border-radius: 6px;
-      padding: 20px;
-      margin-top: 25px;
+    /* CTA */
+    .cta {
+      background: linear-gradient(135deg, #0f172a, #020617);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 30px;
+    }
+
+    .cta h2 {
+      margin-top: 0;
     }
 
     footer {
-      margin-top: 50px;
+      margin-top: 90px;
       font-size: 0.85rem;
-      opacity: 0.6;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      padding-top: 25px;
     }
   </style>
 </head>
 
 <body>
+  <div class="container">
 
-<h1>🔐 Web Application Security Analyst</h1>
-<p>Manual OWASP Top 10 Security Testing & Clear Reporting</p>
+    <!-- HERO -->
+    <div class="hero">
+      <h1>🔐 Web Application Security Analyst</h1>
+      <p>
+        Freelance Web Application Security | OWASP Top 10 |
+        Manual Black-Box Testing & Clear, Actionable Reporting
+      </p>
+    </div>
 
-<div class="box">
-  <h2>About</h2>
-  <p>
-    Freelance Web Application Security Analyst specializing in identifying and
-    reporting OWASP Top 10 vulnerabilities through manual black-box testing.
-    Focused on real-world impact and actionable remediation guidance.
-  </p>
-</div>
+    <!-- ABOUT -->
+    <section>
+      <h2>About</h2>
+      <p>
+        I help developers and small teams identify <strong>critical security
+        vulnerabilities</strong> in their web applications before attackers do.
+      </p>
+      <p>
+        My work focuses on realistic attack scenarios, clear business impact,
+        and remediation guidance developers can immediately apply.
+      </p>
+      <p>
+        I specialize in <strong>manual black-box testing</strong> — not automated scan dumps.
+      </p>
+    </section>
 
-<div class="box">
-  <h2>Services</h2>
-  <ul>
-    <li>OWASP Top 10 Web Application Security Review</li>
-    <li>Manual Black-Box Security Testing</li>
-    <li>Vulnerability Identification & Validation</li>
-    <li>Security Risk & Impact Analysis</li>
-  </ul>
-</div>
+    <!-- SERVICES -->
+    <section>
+      <h2>Services</h2>
+      <ul>
+        <li>OWASP Top 10 Web Application Security Review</li>
+        <li>Manual Black-Box Security Testing</li>
+        <li>Vulnerability Identification & Validation</li>
+        <li>Security Risk & Impact Analysis</li>
+        <li>Remediation & Secure Coding Guidance</li>
+      </ul>
+    </section>
 
-<div class="box">
-  <h2>Sample Work</h2>
-  <p>
-    📄 <a href="PASTE_YOUR_PDF_LINK_HERE">OWASP Top 10 Security Assessment Report</a><br>
-    SQL Injection • IDOR • XSS
-  </p>
-</div>
+    <!-- DELIVERABLES -->
+    <section>
+      <h2>What You Get</h2>
+      <ul>
+        <li>Professional security assessment report (PDF)</li>
+        <li>Clear severity ratings (High / Medium / Low)</li>
+        <li>Real-world impact explanation</li>
+        <li>Actionable remediation steps</li>
+        <li>Clean, client-ready documentation</li>
+      </ul>
+    </section>
 
-<div class="box">
-  <h2>Contact</h2>
-  <p>
-    Email: your@email.com
-  </p>
-</div>
+    <!-- SAMPLE WORK -->
+    <section>
+      <h2>Sample Work</h2>
 
-<footer>
-  All testing demonstrated was performed in controlled lab environments.
-</footer>
+      <div class="highlight">
+        <p><strong>Web Application Security Assessment – OWASP Top 10</strong></p>
+        <p>
+          Identified vulnerabilities:
+        </p>
+        <ul>
+          <li>SQL Injection (Authentication & Data Access Impact)</li>
+          <li>Broken Access Control (IDOR)</li>
+          <li>Cross-Site Scripting (XSS)</li>
+        </ul>
 
+        <p>
+          📎 <a href="PASTE_YOUR_PDF_LINK_HERE">Download Sample Report</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <h2>Want to know the real risks in your application?</h2>
+      <p>
+        If you’re unsure whether your application is vulnerable to common web
+        attacks, I offer a straightforward security review with clear,
+        actionable results.
+      </p>
+      <p>
+        📧 <strong>Email:</strong> your-email@example.com
+      </p>
+      <p style="font-size:0.9rem;color:var(--muted);">
+        Initial discussions are free.
+      </p>
+    </section>
+
+    <footer>
+      ⚠️ All testing demonstrated was performed in controlled lab environments.
+      No unauthorized testing was conducted.
+    </footer>
+
+  </div>
 </body>
 </html>
